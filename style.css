@@ -19,13 +19,22 @@ body a{
 .slide{
     width: 300px;
     min-height: 200px;
-    border: 12px solid black;
+    /* border: 12px solid black; */
+    box-shadow: 1px #EDE8F7;
+    margin-top: -40px;
+    margin-left: 50px;
+    box-shadow: 0 6px 10px 0 #EDE8F7;
 }
 
-#intro{
+.intro{
+    width: 100vw;
     text-align: center;
     justify-content: center;
+    background-image: url('./assets/Group 7.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -61,7 +70,7 @@ label {
     background-color: #245773;
 }
 .home{
-    width: 100%;
+    /* width: 100%; */
     margin-left: 30px;
     background-image: url('./assets/Group 6.png');
     background-repeat: no-repeat;
@@ -88,6 +97,9 @@ label {
 .member-form{
     width: 45%;
 }
+.explorer{
+    color: #6314AE;
+}
 .member-btn{
     background-color: #1C9BC5;
     width: 200px;
@@ -102,6 +114,9 @@ label {
     background-image: url('./assets/Group 4.png');
 } */
 /* about */
+.about{
+    margin: 0 40px 0 20px;
+}
 .about-join h2{
     font-weight: 700;
 }
@@ -151,18 +166,28 @@ label {
 .intro-header h1{
     font-weight: 700;
 }
+.intro-btn button{
+  background-color: #1C9BC5;
+}
+
 
 /* contact section */
 .contacts h2,p{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .contacts h2{
    font-weight: 700;
+}
+.cont-button button{
+    background-color: #1C9BC5;
+    color: #fff;
+    padding: 16px;
 }
 /* subscribe */
 #subscribe{
     /* height: 50vh; */
     margin: 100px;
+    background-color: #F6F8FA;
 }
 .subscriber-form{
     padding-top: 20px;
@@ -181,4 +206,14 @@ label {
 
 .sub-btn{
     padding: 14px;
+    background-color: #1C9BC5;
+}
+
+/* responsive */
+
+@media screen and (min-width: 768px) {
+    .edukation{
+        display: flex;
+        flex-direction: row;
+    }
 }
