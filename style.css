@@ -1,6 +1,9 @@
 body a{
     font-weight: bold;
 }
+button{
+    border: none;
+}
 .logo{
     margin-right: 60px;
 }
@@ -12,18 +15,20 @@ body a{
   display: flex;
   justify-content: center;
 }
-.card img {
+/* .card img {
   max-width: 100%;
   max-height: 100%;
-}
+} */
 .slide{
-    width: 300px;
-    min-height: 200px;
-    /* border: 12px solid black; */
-    box-shadow: 1px #EDE8F7;
+    width: 450px;
+    min-height: 150px;
+    box-shadow: 10px #EDE8F7;
     margin-top: -40px;
-    margin-left: 50px;
-    box-shadow: 0 6px 10px 0 #EDE8F7;
+    margin-left: 100px;
+    box-shadow: 10px 6px 10px 0 #EDE8F7;
+}
+.slide img{
+  object-fit: cover;
 }
 
 .intro{
@@ -71,11 +76,11 @@ label {
 }
 .home{
     /* width: 100%; */
-    margin-left: 30px;
-    background-image: url('./assets/Group 6.png');
+    padding-left: 100px;
+    background-image: url('./assets/Group 11.png');
     background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 400px;
+    background-size: 100% 100%;
+    padding-top: 200px;
 }
 .home-header{
     width: 100%;
@@ -96,6 +101,8 @@ label {
 }
 .member-form{
     width: 45%;
+    border: 4px solid #fff;
+    border-radius: 40px;
 }
 .explorer{
     color: #6314AE;
@@ -105,9 +112,10 @@ label {
     width: 200px;
 }
 .search-member{
-    border-right:0;
     padding: 30px;
-    /* width: 100%; */
+    outline: none;
+    border: none;
+    border-radius: 20px;
 }
 /* .home-bg{
     width: 50%;
@@ -126,15 +134,26 @@ label {
     padding: 10px;
 }
 /* counter */
+.numbers{
+    background-color: rgb(62, 236, 248);
+    padding: 30px;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    border-radius: 50%;
+    margin-left: 22px;
+    font-weight: 700;
+}
 .counter{
     background-color: rgb(4, 62, 117);
     margin: 30px;
     color: white;
     padding: 30px;
 }
-.group img{
-    margin-left: 20px;
+.group{
+    display: grid;
 }
+
 
 /* education */
 .education-desc h2{
@@ -167,7 +186,7 @@ label {
     font-weight: 700;
 }
 .intro-btn button{
-  background-color: #1C9BC5;
+  background-color: #245773;
 }
 
 
@@ -213,6 +232,16 @@ label {
 
 @media screen and (min-width: 768px) {
     .edukation{
+        display: flex;
+        flex-direction: row;
+    }
+    .about-sec{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 576px) { 
+    .about-sec{
         display: flex;
         flex-direction: row;
     }
